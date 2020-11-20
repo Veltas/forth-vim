@@ -20,12 +20,13 @@ syn match forthLangNumber "\<%-\?[01]\+\.\?\>"
 syn match forthLangNumber "\<'.'\>"
 syn match forthLangFloat "\<[+-]\?\d\+\(\.\d*\)\?E[+-]\?\d*\>"
 
-syn keyword forthLangOther :NONAME ; DOES> ;CODE NEXT LITERAL ' 2LITERAL
+syn keyword forthLangOther :NONAME ; DOES> ;CODE NEXT LITERAL 2LITERAL
 syn keyword forthLangOther END-STRUCTURE FLITERAL IMMEDIATE RESTRICT SLITERAL
 
 syn match forthLangParsedWord contained "\<\S\+\zs\s\+\S\+\ze"
 syn match forthLangOther "\<\S*:\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
 syn match forthLangOther "\<MARKER\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
+syn match forthLangOther "\<'\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
 syn match forthLangOther "\<TO\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
 syn match forthLangOther "\<IS\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
 syn match forthLangOther "\<CREATE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
