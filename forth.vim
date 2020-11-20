@@ -55,8 +55,8 @@ syn keyword forthLangStatementX LEAVE LOAD THRU INCLUDE-FILE INCLUDED REQUIRED
 
 syn keyword forthLangRepeat ?DO DO FOR LOOP +LOOP BEGIN AGAIN UNTIL WHILE REPEAT
 
-syn match forthLangBrackets "\<\[\(\(\s\|]\)\@<!.\)*]\?\>"
-syn match forthLangBrackets "\<\(\[\|\]\)\>"
+syn match forthLangBrackets "\<\[[^[:space:]\]]*]\?\>"
+syn match forthLangBrackets "\<[[\]]\>"
 syn match forthLangBrackets "\<\[CHAR\]\s\+\S\+" contains=forthLangParsedWord
 
 syn keyword forthLangTodo contained TODO FIXME XXX NOTE
