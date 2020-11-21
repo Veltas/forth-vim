@@ -13,7 +13,7 @@ syntax case ignore
 setlocal iskeyword=33-255
 
 syn keyword forthLangConstant TRUE FALSE
-syn match forthLangNumber "\<-\?\d\+\.\?\>"
+syn match forthLangNumber "\<-\?\x\+\.\?\>"
 syn match forthLangNumber "\<$-\?\x\+\.\?\>"
 syn match forthLangNumber "\<#-\?\d\+\.\?\>"
 syn match forthLangNumber "\<%-\?[01]\+\.\?\>"
