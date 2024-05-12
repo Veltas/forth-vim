@@ -1,5 +1,5 @@
 " forth.vim - vim syntax file for Forth
-" Copyright 2020 (C) - Christopher Leonard, MIT Licence
+" Copyright 2020-2024 (C) - Christopher Leonard, MIT Licence
 " https://github.com/veltas/forth-vim
 
 " Copy to e.g. ~/.vim/syntax/ or /usr/share/vim/vim*/syntax/ to enable
