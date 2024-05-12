@@ -23,26 +23,10 @@ syn match forthLangFloat "\<[+-]\?\d\+\(\.\d*\)\?E[+-]\?\d*\>"
 
 syn keyword forthLangOther :NONAME ; DOES> ;CODE NEXT LITERAL 2LITERAL
 syn keyword forthLangOther END-STRUCTURE FLITERAL IMMEDIATE RESTRICT SLITERAL
+syn keyword forthLangOther END-PACKAGE PUBLIC PRIVATE
 
 syn match forthLangParsedWord contained "\<\S\+\zs\s\+\S\+\ze"
-syn match forthLangOther "\<\S*:\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<MARKER\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<'\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<TO\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<IS\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<CREATE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<INCLUDE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<POSTPONE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<+FIELD\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<ACTION-OF\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<BEGIN-STRUCTURE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<DEFER\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<FORGET\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<REQUIRE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<CODE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<F\?VALUE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<[2F]\?CONSTANT\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
-syn match forthLangOther "\<[2F]\?VARIABLE\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
+syn match forthLangOther "\<\(\S*:\|MARKER\|'\|TO\|IS\|CREATE\|INCLUDE\|POSTPONE\|+FIELD\|ACTION-OF\|BEGIN-STRUCTURE\|DEFER\|FORGET\|REQUIRE\|CODE\|F\?VALUE\|[2F]\?CONSTANT\|[2F]\?VARIABLE\|PACKAGE\)\(\s\+\S\+\|\s*$\)" contains=forthLangParsedWord
 
 syn match forthLangParsedWords contained "\<\S\+\zs\s\+\S\+\s\+\S\+\ze"
 syn match forthLangOther "\<SYNONYM\(\s\+\S\+\|\s*$\)\{2}" contains=forthLangParsedWords
